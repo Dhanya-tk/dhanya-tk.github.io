@@ -16,51 +16,51 @@
   <meta property="og:description" content="Industrial software integration & MES specialist enabling smart factory systems. Exposure across aerospace, thermal/nuclear power plants, and telecom/communications." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dhanya-tk.github.io/" />
-  <meta property="og:image" content="https://dhanya-tk.github.io/dhanya.jpg" />
+  <meta property="og:image" content="https://dhanya-tk.github.io/dhan.jpg" />
 
   <!-- Structured Data (JSON-LD) -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"Dhanya Thondukulam Kannan",
-  "alternateName":"Dhanya Tk",
-  "url":"https://dhanya-tk.github.io/",
-  "image":"https://dhanya-tk.github.io/dhan.jpg",
-  "sameAs":[
-    "https://www.linkedin.com/in/dhanya-tk/",
-    "https://github.com/Dhanya-tk"
-  ],
-  "jobTitle":"Software Engineer | Industrial Software Integration | Manufacturing Execution Systems (MES) Specialist & Manufacturing Digitalization | Enabling Smart Factory Systems",
-  "affiliation": {
-    "@type": "Organization",
-    "name": "Rehm Thermal Systems GmbH",
-    "url": "https://www.rehm-group.com"
-  },
-  "knowsAbout":[
-    "Manufacturing Execution Systems (MES)",
-    "Industrial Software Integration",
-    "Manufacturing Digitalization",
-    "Smart Factory",
-    "SCADA",
-    "DCS",
-    "Telecommunications",
-    "GSM",
-    "Industrial Systems",
-    "Production Environments",
-    "Aerospace Manufacturing",
-    "Thermal Power Plant Systems",
-    "Nuclear Power Plant Monitoring"
-  ],
-  "description":"Software Engineer focused on industrial software integration and MES within the German manufacturing ecosystem. Professional exposure includes aerospace production environments, thermal and nuclear power plant monitoring systems, telecommunications networks, and SCADA/DCS/MES-based production architectures."
-}
-</script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Dhanya Thondukulam Kannan",
+    "alternateName":"Dhanya Tk",
+    "url":"https://dhanya-tk.github.io/",
+    "image":"https://dhanya-tk.github.io/dhan.jpg",
+    "sameAs":[
+      "https://www.linkedin.com/in/dhanya-tk/",
+      "https://github.com/Dhanya-tk"
+    ],
+    "jobTitle":"Software Engineer | Industrial Software Integration | Manufacturing Execution Systems (MES) Specialist & Manufacturing Digitalization | Enabling Smart Factory Systems",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Rehm Thermal Systems GmbH",
+      "url": "https://www.rehm-group.com"
+    },
+    "knowsAbout":[
+      "Manufacturing Execution Systems (MES)",
+      "Industrial Software Integration",
+      "Manufacturing Digitalization",
+      "Smart Factory",
+      "SCADA",
+      "DCS",
+      "OPC UA",
+      "MQTT",
+      "SAP",
+      "Telecommunications",
+      "GSM",
+      "Aerospace Manufacturing",
+      "Thermal Power Plant Systems",
+      "Nuclear Power Plant Monitoring"
+    ],
+    "description":"Software Engineer focused on industrial software integration and MES within the German manufacturing ecosystem. Professional exposure includes aerospace production environments, thermal and nuclear power plant monitoring systems, telecommunications networks, and SCADA/DCS/MES-based production architectures."
+  }
+  </script>
 
   <style>
     :root{
       --bg1:#070B16;
       --bg2:#030611;
-      --card: rgba(255,255,255,.06);
       --border: rgba(255,255,255,.12);
       --text: rgba(255,255,255,.92);
       --muted: rgba(255,255,255,.72);
@@ -136,45 +136,60 @@
       max-width: 78ch;
     }
 
-    .links{
+    /* Premium badge buttons */
+    .badge-row{
       display:flex;
-      gap:10px;
       flex-wrap:wrap;
-      margin-top: 14px;
+      gap:12px;
+      margin-top:14px;
     }
-    .btn{
+    .badge-btn{
       display:inline-flex;
       align-items:center;
-      padding: 10px 12px;
-      border-radius: 12px;
-      border:1px solid var(--border);
-      background: rgba(255,255,255,.06);
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
-      font-size:14px;
-      white-space:nowrap;
-    }
-    .btn:hover{
-      transform: translateY(-1px);
-      background: rgba(255,255,255,.10);
-      border-color: rgba(255,255,255,.18);
-    }
-
-    .chips{
-      display:flex;
-      flex-wrap:wrap;
       gap:10px;
-      margin-top: 16px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.06);
+      color: rgba(255,255,255,0.92);
+      font-size: 14px;
+      line-height: 1;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
     }
-    .chip{
-      font-size:13px;
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid var(--border);
-      background: rgba(255,255,255,.05);
-      color: rgba(255,255,255,.86);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+    .badge-btn:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,255,255,0.22);
     }
+    .badge-btn .icon{
+      width:18px;
+      height:18px;
+      display:inline-flex;
+    }
+    .badge-btn .icon svg{
+      width:18px;
+      height:18px;
+    }
+    .badge-btn .tag{
+      margin-left: 4px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.92);
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(0,0,0,0.20);
+    }
+    .badge-btn.linkedin{ background: rgba(10,102,194,0.18); border-color: rgba(10,102,194,0.35); }
+    .badge-btn.github{ background: rgba(0,0,0,0.20); border-color: rgba(255,255,255,0.18); }
+    .badge-btn.website{ background: rgba(46,164,79,0.18); border-color: rgba(46,164,79,0.35); }
+    .badge-btn.articles{ background: rgba(255,140,0,0.18); border-color: rgba(255,140,0,0.35); }
+
+    .badge-btn.linkedin .tag{ background: rgba(10,102,194,0.30); }
+    .badge-btn.github .tag{ background: rgba(255,255,255,0.08); }
+    .badge-btn.website .tag{ background: rgba(46,164,79,0.30); }
+    .badge-btn.articles .tag{ background: rgba(255,140,0,0.30); }
 
     h2{
       margin: 22px 0 10px 0;
@@ -194,8 +209,19 @@
     }
     li{ margin: 6px 0; }
 
+    /* Shield-style rows */
+    .shields{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:10px;
+    }
+    .shields img{
+      height: 28px;
+    }
+
     footer{
-      margin-top: 14px;
+      margin-top: 16px;
       text-align:center;
       color: rgba(255,255,255,.55);
       font-size: 13px;
@@ -207,7 +233,6 @@
   <div class="wrap">
     <section class="card">
       <div class="top">
-        <!-- Upload your photo as: dhanya.jpg (repo root) -->
         <img
           class="photo"
           src="dhan.jpg"
@@ -221,13 +246,39 @@
         <div>
           <h1>Dhanya Thondukulam Kannan</h1>
           <div class="headline">
-            <strong>Software Engineer</strong> | Industrial Software Integration | <strong>Manufacturing Execution Systems (MES)</strong> Specialist & Manufacturing Digitalization |
+            <strong>Software Engineer</strong> | Industrial Software Integration |
+            <strong>Manufacturing Execution Systems (MES)</strong> Specialist & Manufacturing Digitalization |
             Enabling Smart Factory Systems
           </div>
 
-          <div class="links" aria-label="External links">
-            <a class="btn" href="https://www.linkedin.com/in/dhanya-tk/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn" href="https://github.com/Dhanya-tk" target="_blank" rel="noopener">GitHub</a>
+          <div class="badge-row" aria-label="Connect links">
+            <a class="badge-btn linkedin" href="https://www.linkedin.com/in/dhanya-tk/" target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.2 23.5h4.6V7.9H.2v15.6ZM8.2 7.9h4.4v2.1h.1c.6-1.1 2.1-2.3 4.4-2.3 4.7 0 5.6 3.1 5.6 7.2v8.6h-4.6v-7.6c0-1.8 0-4.1-2.5-4.1s-2.9 1.9-2.9 4v7.7H8.2V7.9Z"/></svg>
+              </span>
+              LinkedIn <span class="tag">Connect</span>
+            </a>
+
+            <a class="badge-btn github" href="https://github.com/Dhanya-tk" target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.75 5.62.75 12c0 5.1 3.29 9.43 7.86 10.96.58.11.79-.26.79-.57v-2.1c-3.2.71-3.88-1.4-3.88-1.4-.53-1.39-1.29-1.76-1.29-1.76-1.05-.74.08-.73.08-.73 1.16.09 1.77 1.23 1.77 1.23 1.03 1.8 2.7 1.28 3.36.98.1-.77.4-1.28.72-1.58-2.56-.3-5.25-1.31-5.25-5.83 0-1.29.45-2.35 1.18-3.18-.12-.3-.51-1.52.11-3.17 0 0 .97-.32 3.18 1.22.92-.26 1.9-.39 2.88-.39.98 0 1.96.13 2.88.39 2.21-1.54 3.18-1.22 3.18-1.22.62 1.65.23 2.87.11 3.17.73.83 1.18 1.89 1.18 3.18 0 4.53-2.7 5.53-5.27 5.83.41.36.78 1.07.78 2.15v3.18c0 .31.21.68.8.57 4.57-1.53 7.85-5.86 7.85-10.96C23.25 5.62 18.27.5 12 .5Z"/></svg>
+              </span>
+              GitHub <span class="tag">Profile</span>
+            </a>
+
+            <a class="badge-btn website" href="https://dhanya-tk.github.io" target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20Zm7.93 9h-3.16a15.6 15.6 0 00-1.2-5.05A8.02 8.02 0 0119.93 11ZM12 4c.9 0 2.26 1.65 3.04 7H8.96C9.74 5.65 11.1 4 12 4ZM4.07 13h3.16c.24 1.82.7 3.57 1.2 5.05A8.02 8.02 0 014.07 13Zm3.16-2H4.07a8.02 8.02 0 014.32-5.05c-.5 1.48-.96 3.23-1.2 5.05ZM12 20c-.9 0-2.26-1.65-3.04-7h6.08C14.26 18.35 12.9 20 12 20Zm3.57-1.95c.5-1.48.96-3.23 1.2-5.05h3.16a8.02 8.02 0 01-4.36 5.05Z"/></svg>
+              </span>
+              Website <span class="tag">Visit</span>
+            </a>
+
+            <a class="badge-btn articles" href="https://www.rehm-group.com/en/news/blog/details/taking-the-international-path.html#:~:text=Rehm%20Thermal%20Systems%20is%20searching%20for%20specialists,the%20best%20cases%2C%20it%20is%20finding%20them." target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h9l5 5v15a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2Zm8 1.5V8h4.5L14 3.5ZM7.5 11h9v1.5h-9V11Zm0 4h9v1.5h-9V15Zm0 4h6v1.5h-6V19Z"/></svg>
+              </span>
+              Articles <span class="tag">Read</span>
+            </a>
           </div>
         </div>
       </div>
@@ -250,21 +301,31 @@
         <li><strong>Telecommunications & communications systems:</strong> foundation in GSM core-network signaling concepts and real-time transmission environments.</li>
       </ul>
 
-      <h2>Keywords</h2>
-      <div class="chips" aria-label="Keywords">
-        <span class="chip">MES</span>
-        <span class="chip">OOPS</span>
-        <span class="chip">software integration</span>
-        <span class="chip">CI/CD</span>
-        <span class="chip">Manufacturing Digitalization</span>
-        <span class="chip">SCADA</span>
-        <span class="chip">OPC-UA</span>
-        <span class="chip">MQTT</span>
-        <span class="chip">DCS</span>
-        <span class="chip">SCADA</span>
-        <span class="chip">Smart Factory</span>
-        <span class="chip">Requirements Engineering</span>
-        <span class="chip">Clean Architecture</span>
+      <h2>🧰 Tech I Use</h2>
+      <div class="shields" aria-label="Tech I Use">
+        <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+        <img alt="WPF" src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge" />
+        <img alt="WCF" src="https://img.shields.io/badge/WCF-512BD4?style=for-the-badge" />
+        <img alt="MVVM" src="https://img.shields.io/badge/MVVM-512BD4?style=for-the-badge" />
+        <img alt="C#" src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
+        <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+        <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+        <img alt="REST API" src="https://img.shields.io/badge/REST_API-02569B?style=for-the-badge" />
+        <img alt="AMQP" src="https://img.shields.io/badge/AMQP-CC0000?style=for-the-badge" />
+        <img alt="InstallShield" src="https://img.shields.io/badge/InstallShield-CC0000?style=for-the-badge" />
+        <img alt="UML" src="https://img.shields.io/badge/UML-02569B?style=for-the-badge" />
+        <img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+        <img alt="Jenkins" src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" />
+      </div>
+
+      <h2>🏭 Industrial & Integration Technologies</h2>
+      <div class="shields" aria-label="Industrial & Integration Technologies">
+        <img alt="SAP" src="https://img.shields.io/badge/SAP-0FAAFF?style=for-the-badge&logo=sap&logoColor=white" />
+        <img alt="MES" src="https://img.shields.io/badge/MES-111111?style=for-the-badge" />
+        <img alt="OPC-UA" src="https://img.shields.io/badge/OPC--UA-2E8B57?style=for-the-badge" />
+        <img alt="SCADA" src="https://img.shields.io/badge/SCADA-111111?style=for-the-badge" />
+        <img alt="MQTT" src="https://img.shields.io/badge/MQTT-660066?style=for-the-badge" />
+        <img alt="DCS" src="https://img.shields.io/badge/DCS-111111?style=for-the-badge" />
       </div>
 
       <footer>
