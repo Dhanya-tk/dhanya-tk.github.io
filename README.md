@@ -43,6 +43,7 @@
   <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" />
 
 </p>
+
 ---
 
 ## 🏭 Industrial & Integration Technologies
@@ -56,13 +57,6 @@
   <img src="https://img.shields.io/badge/MQTT-660066?style=for-the-badge" />
   <img src="https://img.shields.io/badge/DCS-111111?style=for-the-badge" />
 </p>
-
----
-
-## 📰 Latest writing / links
-- Website: https://dhanya-tk.github.io  
-- LinkedIn: https://www.linkedin.com/in/dhanya-tk/  
-- GitHub: https://github.com/dhanya-tk  
 
 ---
 
