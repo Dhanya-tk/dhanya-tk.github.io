@@ -1,4 +1,4 @@
-# Dhanya Thondukulam Kannan — Personal Branding Site (GitHub Pages)
+# Dhanya Thondukulam Kannan — Software Engineer
 
 This repository hosts my personal one-page site for professional branding and search visibility.
 
@@ -21,4 +21,5 @@ This repository hosts my personal one-page site for professional branding and se
 1. Create a repository named **dhanya-tk.github.io**
 2. Add these files to the repository root
 3. In GitHub: Settings → Pages → Source: Deploy from branch → `main` (root)
+
 4. Visit: https://dhanya-tk.github.io/
