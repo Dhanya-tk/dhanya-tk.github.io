@@ -16,7 +16,7 @@
   <meta property="og:description" content="Industrial software integration & MES specialist enabling smart factory systems. Exposure across aerospace, thermal/nuclear power plants, and telecom/communications." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dhanya-tk.github.io/" />
-  <meta property="og:image" content="https://dhanya-tk.github.io/dhan.jpg" />
+  <meta property="og:image" content="https://dhanya-tk.github.io/dhanya-thondukulam-kannan.jpg" />
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -26,7 +26,7 @@
     "name":"Dhanya Thondukulam Kannan",
     "alternateName":"Dhanya Tk",
     "url":"https://dhanya-tk.github.io/",
-    "image":"https://dhanya-tk.github.io/dhan.jpg",
+    "image":"https://dhanya-tk.github.io/dhanya-thondukulam-kannan.jpg",
     "sameAs":[
       "https://www.linkedin.com/in/dhanya-tk/",
       "https://github.com/Dhanya-tk"
@@ -61,6 +61,7 @@
     :root{
       --bg1:#070B16;
       --bg2:#030611;
+      --card: rgba(255,255,255,.06);
       --border: rgba(255,255,255,.12);
       --text: rgba(255,255,255,.92);
       --muted: rgba(255,255,255,.72);
@@ -68,7 +69,10 @@
       --radius: 18px;
       --max: 980px;
     }
+
     *{ box-sizing:border-box; }
+    html, body { height: 100%; }
+
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
@@ -82,15 +86,17 @@
       justify-content:center;
       padding: 44px 18px;
     }
+
     a{ color:inherit; text-decoration:none; }
     .wrap{ width:100%; max-width:var(--max); }
 
+    /* Card */
     .card{
       border:1px solid var(--border);
       background: rgba(255,255,255,.05);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 22px;
+      padding: 26px;
       overflow:hidden;
       position:relative;
     }
@@ -99,48 +105,87 @@
       position:absolute;
       inset:-90px -90px auto auto;
       width:360px; height:360px;
-      background: radial-gradient(circle at 30% 30%, rgba(86,200,255,.30), transparent 60%);
+      background: radial-gradient(circle at 30% 30%, rgba(86,200,255,.25), transparent 60%);
       filter: blur(8px);
       transform: rotate(12deg);
       pointer-events:none;
     }
 
+    /* Executive header row */
     .top{
       display:flex;
       gap:18px;
       align-items:center;
-      flex-wrap:wrap;
+    }
+    .header-block{
+      min-width: 260px;
     }
 
-    .photo{
-      width: 124px;
-      height: 124px;
-      border-radius: 22px;
-      border: 1px solid rgba(255,255,255,.18);
-      object-fit: cover;
-      background: rgba(255,255,255,.06);
+    /* Circular avatar + gradient ring + subtle glow */
+    .avatar{
+      position: relative;
+      width: 132px;
+      height: 132px;
+      border-radius: 999px;
       flex: 0 0 auto;
+      isolation: isolate;
+    }
+    .avatar::before{
+      content:"";
+      position:absolute;
+      inset:-3px;
+      border-radius:999px;
+      background: linear-gradient(135deg,
+        rgba(86,200,255,.85),
+        rgba(255,120,214,.70),
+        rgba(112,255,168,.70)
+      );
+      z-index: -1;
+    }
+    .avatar::after{
+      content:"";
+      position:absolute;
+      inset:-12px;
+      border-radius:999px;
+      background: radial-gradient(circle at 30% 30%,
+        rgba(86,200,255,.35),
+        rgba(255,120,214,.18),
+        transparent 62%
+      );
+      filter: blur(12px);
+      z-index: -2;
+      opacity: .9;
+    }
+    .avatar img{
+      width: 100%;
+      height: 100%;
+      border-radius: 999px;
+      object-fit: cover;
+      display:block;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.06);
+      box-shadow: 0 18px 45px rgba(0,0,0,.45);
     }
 
     h1{
       margin:0;
-      font-size: clamp(26px, 4vw, 40px);
+      font-size: clamp(26px, 3.6vw, 42px);
       letter-spacing: -0.02em;
       line-height:1.05;
     }
     .headline{
-      margin-top:10px;
+      margin-top: 10px;
       color: var(--muted);
-      line-height:1.55;
+      line-height: 1.6;
       font-size: 15.5px;
-      max-width: 78ch;
+      max-width: 80ch;
     }
 
-    /* Premium badge buttons */
+    /* Compact premium buttons under headline */
     .badge-row{
       display:flex;
       flex-wrap:wrap;
-      gap:12px;
+      gap:10px;
       margin-top:14px;
     }
     .badge-btn{
@@ -157,6 +202,7 @@
       transition: transform .15s ease, background .15s ease, border-color .15s ease;
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
+      white-space: nowrap;
     }
     .badge-btn:hover{
       transform: translateY(-1px);
@@ -173,7 +219,7 @@
       height:18px;
     }
     .badge-btn .tag{
-      margin-left: 4px;
+      margin-left: 2px;
       padding: 6px 10px;
       border-radius: 999px;
       font-size: 12px;
@@ -181,11 +227,12 @@
       border: 1px solid rgba(255,255,255,0.18);
       background: rgba(0,0,0,0.20);
     }
+
+    /* Brand tints */
     .badge-btn.linkedin{ background: rgba(10,102,194,0.18); border-color: rgba(10,102,194,0.35); }
     .badge-btn.github{ background: rgba(0,0,0,0.20); border-color: rgba(255,255,255,0.18); }
     .badge-btn.website{ background: rgba(46,164,79,0.18); border-color: rgba(46,164,79,0.35); }
     .badge-btn.articles{ background: rgba(255,140,0,0.18); border-color: rgba(255,140,0,0.35); }
-
     .badge-btn.linkedin .tag{ background: rgba(10,102,194,0.30); }
     .badge-btn.github .tag{ background: rgba(255,255,255,0.08); }
     .badge-btn.website .tag{ background: rgba(46,164,79,0.30); }
@@ -209,7 +256,7 @@
     }
     li{ margin: 6px 0; }
 
-    /* Shield-style rows */
+    /* Shield badge rows */
     .shields{
       display:flex;
       flex-wrap:wrap;
@@ -221,10 +268,22 @@
     }
 
     footer{
-      margin-top: 16px;
+      margin-top: 18px;
       text-align:center;
       color: rgba(255,255,255,.55);
       font-size: 13px;
+    }
+
+    /* Responsive: center everything on small screens */
+    @media (max-width: 620px){
+      .top{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .badge-row{
+        justify-content: center;
+      }
     }
   </style>
 </head>
@@ -233,18 +292,20 @@
   <div class="wrap">
     <section class="card">
       <div class="top">
-        <img
-          class="photo"
-          src="dhan.jpg"
-          alt="Dhanya Thondukulam Kannan - Software Engineer specializing in MES and industrial software integration"
-          width="124"
-          height="124"
-          loading="eager"
-          decoding="async"
-        />
+        <div class="avatar">
+          <img
+            src="dhanya-thondukulam-kannan.jpg"
+            alt="Dhanya Thondukulam Kannan - Software Engineer specializing in MES and industrial software integration"
+            width="132"
+            height="132"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
 
-        <div>
+        <div class="header-block">
           <h1>Dhanya Thondukulam Kannan</h1>
+
           <div class="headline">
             <strong>Software Engineer</strong> | Industrial Software Integration |
             <strong>Manufacturing Execution Systems (MES)</strong> Specialist & Manufacturing Digitalization |
@@ -273,7 +334,7 @@
               Website <span class="tag">Visit</span>
             </a>
 
-            <a class="badge-btn articles" href="https://www.rehm-group.com/en/news/blog/details/taking-the-international-path.html#:~:text=Rehm%20Thermal%20Systems%20is%20searching%20for%20specialists,the%20best%20cases%2C%20it%20is%20finding%20them." target="_blank" rel="noopener">
+            <a class="badge-btn articles" href="https://epp.industrie.de/news/rehm-beschaeftigt-mitarbeiter-aus-mehr-als-26-laendern/" target="_blank" rel="noopener">
               <span class="icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h9l5 5v15a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2Zm8 1.5V8h4.5L14 3.5ZM7.5 11h9v1.5h-9V11Zm0 4h9v1.5h-9V15Zm0 4h6v1.5h-6V19Z"/></svg>
               </span>
@@ -290,10 +351,11 @@
         traceability, and maintainable architecture.
       </p>
       <p>
-        My current focus is <strong>industrial software integration</strong> and <strong>MES</strong>, enabling reliable data flow between machines,
-        production workflows, and enterprise systems to support smart factory execution.
+         I am particularly interested in building robust, maintainable systems that balance technical excellence with business value. My approach emphasizes clarity in design, automated testing, and continuous improvement throughout the development lifecycle. 
       </p>
-
+		<p>
+         Having transitioned internationally into the German manufacturing ecosystem, I bring both technical expertise and adaptability to multicultural engineering teams. I enjoy working in collaborative environments where engineering discipline, structured processes, and innovation come together to deliver high-quality software solutions.
+      </p>
       <h2>Exposure across industrial domains</h2>
       <ul>
         <li><strong>Aerospace manufacturing:</strong> exposure to high-precision production workflows and quality processes.</li>
